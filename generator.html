@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muzammil Hacker ✨ Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div class="container">
+    <h1>📱 Muzammil Hacker ✨</h1>
+    <div class="mode-toggle">
+      <button onclick="setMode('manual')">Manual Mode 🛠️</button>
+      <button onclick="setMode('auto')">Auto Mode ⚙️</button>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="network" placeholder="Enter Network Code (e.g. 0300)" />
+      <input type="text" id="start" placeholder="Enter Starting Number (7 digits)" />
+      <input type="number" id="quantity" placeholder="Quantity" />
+      <button onclick="generateNumbers()">Generate</button>
+    </div>
+
+    <textarea id="output" placeholder="Generated numbers will appear here..." readonly></textarea>
+
+    <button id="copyBtn" onclick="copyNumbers()">📋 Copy All</button>
+    <p id="thankYou" class="hidden">✅ Thanks for using Muzammil Hacker ✨</p>
+    <div id="rate" class="hidden">
+      <p>Rate Your Experience ⭐</p>
+      <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/966573062374" target="_blank" class="whatsapp-float">💬</a>
+  <script type="module" src="butterflies.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="butterflies.css">
+</body>
+</html>
